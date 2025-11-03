@@ -1,12 +1,9 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-<<<<<<< HEAD
     "jsx": "react-jsx",
     "lib": ["dom", "esnext"],
     "types": ["react", "react-native"],
-=======
->>>>>>> d9aedf2335971637bb9c1611ce67479a4f71613c
     "strict": true,
     "paths": {
       "@/*": [
