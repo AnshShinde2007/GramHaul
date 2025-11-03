@@ -9,8 +9,8 @@ const app = express();
 app.use(bodyParser.json());
 
 // 🔐 your Twilio credentials
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
+const accountSid = process.env.TWILIO_ACC_SID;
+const authToken = process.env.TWILIO_ACC_TOKEN;
 const phonenumber = process.env.TWILIO_PHONE_NUMBER;
 const client = twilio(accountSid, authToken);
 
