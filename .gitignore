@@ -1,16 +1,13 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
-<<<<<<< HEAD
+# dependencies\
+.env
 /node_modules/
 package-lock.json
 /app-example
 /backend/node_modules/
 /backend/package-lock.json
-=======
-node_modules/
->>>>>>> d9aedf2335971637bb9c1611ce67479a4f71613c
-
+/backend/.env
 # Expo
 .expo/
 dist/
