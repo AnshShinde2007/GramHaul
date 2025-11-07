@@ -1,18 +1,22 @@
 import { useRouter } from "expo-router";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { useState } from "react";
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 export default function RoleSelection() {
   const router = useRouter();
+  const [licenseNo, setLicenseNo] = useState<string>("");
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Enter Your Name</Text>
+      <Text style={styles.title}>Enter Your License Number</Text>
+
       <TextInput
-              style={styles.input}
-              placeholder="License Number"
-              value={licenseNo}
-              onChangeText={setLicenseNo}
-            />
+        style={styles.input}
+        placeholder="License Number"
+        value={licenseNo}
+        onChangeText={setLicenseNo}
+      />
+
       <Text style={styles.title}>Select Your Role</Text>
 
       <TouchableOpacity
@@ -41,9 +45,9 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   title: {
-    fontSize: 26,
+    fontSize: 22,
     fontWeight: "bold",
-    marginBottom: 40,
+    marginBottom: 20,
     color: "#2E7D32",
   },
   btn: {

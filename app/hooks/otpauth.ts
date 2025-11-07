@@ -1,4 +1,4 @@
-const BASE_URL = "http://192.168.1.108:5000"; // 👈 your backend
+const BASE_URL = "http://192.168.1.104:5000"; // 👈 your backend
 
 export interface OtpResponse {
   success: boolean;
